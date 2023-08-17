@@ -1,4 +1,4 @@
-@import "components";
+@use 'components';
 main {
     padding-top: 150px;
 }
@@ -6,3 +6,4 @@ main {
 main .ofertaSkate{
     margin-top: 100px;
 }
+
