@@ -1,6 +1,9 @@
 header {
   width: 100%;
 }
+header nav .menu ul li:hover {
+  color: red;
+}
 header .logoPagina {
   width: 500px;
 }
@@ -17,21 +20,26 @@ header .carritoCompra {
   text-align: center;
   align-items: start;
 }
+
 .card .card-text {
   margin: 0px 0px 25px 10px;
   font-size: medium;
 }
+
 .card .card-body {
   padding: 0px;
   display: flex;
   justify-content: flex-start;
 }
+
 .card .card-body p {
   margin: 0px 0px 0px 10px;
 }
+
 .card .card-body a {
   padding: 0px;
 }
+
 .card .card-body a img {
   margin: 0px 0px 15px 15px;
   width: 27px;
@@ -47,6 +55,4 @@ main .ofertaSkate {
 
 footer a .redesSociales {
   width: 50px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
