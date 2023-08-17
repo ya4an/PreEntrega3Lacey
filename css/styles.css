@@ -1,0 +1,52 @@
+header {
+  width: 100%;
+}
+header .logoPagina {
+  width: 500px;
+}
+header .lupaBuscador {
+  width: 30px;
+}
+header .carritoCompra {
+  width: 30px;
+}
+
+.card {
+  border: grey solid 1cap;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  align-items: start;
+}
+.card .card-text {
+  margin: 0px 0px 25px 10px;
+  font-size: medium;
+}
+.card .card-body {
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+.card .card-body p {
+  margin: 0px 0px 0px 10px;
+}
+.card .card-body a {
+  padding: 0px;
+}
+.card .card-body a img {
+  margin: 0px 0px 15px 15px;
+  width: 27px;
+}
+
+main {
+  padding-top: 150px;
+}
+
+main .ofertaSkate {
+  margin-top: 100px;
+}
+
+footer a .redesSociales {
+  width: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */
