@@ -1,11 +1,107 @@
+@charset "UTF-8";
+/* $dorado: rgba(191, 143, 55, 1);
+$doradoVerdoso: rgba(211, 169, 7, 1);
+$doradoNaranja: rgba(229, 155, 0, 1);
+$doradoMarron: rgba(146, 106, 37, 1);
+
+$grisOscuro: rgba(76, 79, 86, 1);
+$grisClaro: rgba(199, 198, 198, 1);
+$blancoMate: rgba(241, 233, 215, 1);
+$negroSuave: rgba(3, 3, 3, 1); */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9895); /* Escala inicial menor */
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1); /* Escala completa */
+    opacity: 0.8;
+  }
+}
+@keyframes scale {
+  50% {
+    transform: translateY(-7px); /* Mover hacia arriba */
+  }
+}
+.cardsChicas {
+  padding-top: 30px;
+}
+.cardsChicas .card {
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  align-items: start;
+  padding: 1px;
+  margin: 3px;
+  animation: zoomIn 0.4s ease-in-out;
+  transition: transform 1s ease; /* Transición suave al cambiar transformaciones */
+}
+.cardsChicas .card:hover {
+  animation: scale 0.6s ease; /* Aplicar la animación al hacer hover */
+  transform: translateY(-7px); /* Realizar un pequeño movimiento hacia arriba */
+}
+.cardsChicas .card .card-text {
+  margin: 0px 0px 25px 10px;
+  font-size: medium;
+}
+.cardsChicas .card h4 {
+  margin: 0px 0px 25px 10px;
+  font-size: small;
+  font-weight: 400;
+}
+.cardsChicas .card .card-body {
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+.cardsChicas .card .card-body p {
+  margin: 0px 0px 0px 10px;
+}
+.cardsChicas .card .card-body a {
+  padding: 0px;
+}
+.cardsChicas .card .card-body a img {
+  margin: 0px 0px 15px 15px;
+  width: 27px;
+}
+
+.owl-carousel .item {
+  margin: 10px;
+}
+.owl-carousel .item .card {
+  border-radius: 0;
+  margin: 10px;
+}
+.owl-carousel .item .card .card-text {
+  margin: 0px 0px 25px 10px;
+  font-size: medium;
+}
+.owl-carousel .item .card .card-body {
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+.owl-carousel .item .card .card-body p {
+  margin: 0px 0px 0px 10px;
+}
+.owl-carousel .item .card .card-body a {
+  padding: 0px;
+}
+.owl-carousel .item .card .card-body a img {
+  margin: 0px 0px 15px 15px;
+  width: 27px;
+}
+
 header {
   width: 100%;
 }
-header nav .menu ul li:hover {
-  color: red;
+header * {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 }
 header .logoPagina {
-  width: 500px;
+  width: 300px;
 }
 header .lupaBuscador {
   width: 30px;
@@ -13,46 +109,32 @@ header .lupaBuscador {
 header .carritoCompra {
   width: 30px;
 }
-
-.card {
-  border: grey solid 1cap;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  align-items: start;
+header .titulo {
+  background-color: rgba(199, 198, 198, 0.3);
+  padding: 5px 0px 5px 0px;
 }
 
-.card .card-text {
-  margin: 0px 0px 25px 10px;
-  font-size: medium;
+footer {
+  padding-top: 100px;
 }
-
-.card .card-body {
-  padding: 0px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.card .card-body p {
-  margin: 0px 0px 0px 10px;
-}
-
-.card .card-body a {
-  padding: 0px;
-}
-
-.card .card-body a img {
-  margin: 0px 0px 15px 15px;
-  width: 27px;
+footer a .redesSociales {
+  width: 50px;
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 104px;
 }
-
 main .ofertaSkate {
   margin-top: 100px;
 }
+main .imagenBanner {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
 
-footer a .redesSociales {
-  width: 50px;
-}/*# sourceMappingURL=styles.css.map */
+.text-center {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

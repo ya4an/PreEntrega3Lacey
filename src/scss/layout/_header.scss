@@ -1,0 +1,26 @@
+
+header {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    width: 100%;
+    
+    .logoPagina {
+        width: 300px;
+    }
+    .lupaBuscador {
+        width: 30px;
+    }
+    .carritoCompra {
+        width: 30px;
+    }
+    .titulo {
+        background-color: rgba(199, 198, 198, 0.3);
+        padding: 5px 0px 5px 0px;
+    }
+
+}
+
+
