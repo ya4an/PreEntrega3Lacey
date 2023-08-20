@@ -13,33 +13,18 @@
 
 <body class="bg-light row">
   <!--HEADER-->
-  <header class="bg-light fixed-top w-100 p-0 z-3">
-    <nav class="container navbar navbar-expand-lg z-2 justify-content-center">
-      <div class="row align-items-center justify-content-between">
+  <header class="fixed-top w-100 p-0 z-3">
+    <div class="container-fluid text-center ">
+      <div class="row d-flex">
+        <h1 class="col titulo fs-6 d-flex justify-content-center">TRUESKATESHOP-INICIO</h1>
+      </div>
+      <div class="row preNav">
         <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 ">
           <a class="navbar-brand" href="../index.html">
             <img class="img-fluid logoPagina" src="../assest/logos/logoPagina.png" alt="logo_pagina">
           </a>
         </div>
-        <button
-          class="ms-auto col-1 col-sm-1 col-md-1 col-lg-7 col-xl-7 col-xxl-2 border-3 rounded-5 shadow border-warning navbar-toggler"
-          type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon w-100 "></span>
-        </button>
-        <div class="col-12 col-sm-6 col-md-2 col-lg-7 col-xl-7 col-xxl-2 justify-content-center collapse navbar-collapse fs-6 fw-bold"
-          id="navbarSupportedContent">
-
-          <ul class="row navbar-nav ">
-            <li class="col-2 px-3 nav-item"><a class="nav-link"  href="../index.html">INICIO</a></li>
-            <li class="col-2 px-3 nav-item"><a class="nav-link" href="../pages/hombre.html">HOMBRE</a></li>
-            <li class="col-2 px-3 nav-item"><a class="nav-link" href="../pages/mujer.html">MUJER</a></li>
-            <li class="col-2 px-3 nav-item"><a class="nav-link" href="../pages/skate.html">SKATE</a></li>
-            <li class="col-2 px-3 nav-item"><a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a></li>
-          </ul>
-        </div>
-
-        <div class="col-4 col-sm-5 col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+        <div class="col-4 col-sm-5 col-md-4 col-lg-2 col-xl-2 col-xxl-2 contLupaCarri">
           <div class="row">
             <div class="col">
               <a href=""> <!--LINKEAR-->
@@ -54,12 +39,61 @@
           </div>
         </div>
       </div>
-    </nav>
-    <div class="container-fluid text-center">
-      <div class="row d-flex">
-        <h1 class="col titulo fs-6 d-flex justify-content-center">TRUESKATESHOP-CONTACTO</h1>
-      </div>
     </div>
+    <nav class="container-fluid navbar navbar-expand-lg z-2 justify-content-center">
+      <div class="row align-items-center justify-content-between">
+        
+        <button
+          class="ms-auto col-1 col-sm-1 col-md-1 col-lg-7 col-xl-7 col-xxl-2 border-3 rounded-5 shadow border-warning w-100 navbar-toggler"
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="menu col-12 col-sm-6 col-md-2 col-lg-7 col-xl-7 col-xxl-2 justify-content-center collapse navbar-collapse fs-6 fw-bold"
+          id="navbarSupportedContent">
+
+          <ul class="row navbar-nav ">
+            <li class="col px-3 nav-item"><a class="nav-link"
+                href="../index.html">INICIO</a></li>
+            <li class="col px-3 nav-item"><a class="nav-link" href="../pages/hombre.html">HOMBRE</a>
+              <ul class="sub-menu">
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Remeras</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Buzos</a></li>
+                <!-- Agregar más elementos de submenú según sea necesario -->
+              </ul>
+            </li>
+              
+            <li class="col px-3 nav-item"><a class="nav-link" href="../pages/mujer.html">MUJER</a>
+              <ul class="sub-menu">
+                <li><a href="#">Remeras</a></li>
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Buzos</a></li>
+                <!-- Agregar más elementos de submenú según sea necesario -->
+              </ul>
+            </li>
+              
+            
+            <li class="col px-3 nav-item"><a class="nav-link" href="../pages/skate.html">SKATE</a>
+              <ul class="sub-menu">
+                <li><a href="#">Tablas</a></li>
+                <li><a href="#">Trucks</a></li>
+                <li><a href="#">Ruedas</a></li>
+                <li><a href="#">Rulemanes</a></li>
+                <!-- Agregar más elementos de submenú según sea necesario -->
+              </ul>
+            </li>
+              
+            <li class="col px-3 nav-item"><a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a></li>
+          </ul>
+        </div>
+
+        
+      </div>
+    </nav>
+    
   </header>
   <!--MAIN-->
   <main class="mt-6 border-bottom shadow-sm ">
