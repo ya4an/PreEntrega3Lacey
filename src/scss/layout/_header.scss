@@ -32,9 +32,17 @@ header {
         img {
             width: 30px;
         }
-        .logoPagina {
+        .logo{
+            display: flex;
+            justify-content: center;
+            .logoPagina {
             opacity: 80%;
             width: 250px;
+        }
+        }
+        .carrito {
+            display: flex;
+            justify-content: center;
         }
         .search {
             position: relative;
@@ -110,7 +118,6 @@ header {
             
         }
     }
-    
     
 }
 

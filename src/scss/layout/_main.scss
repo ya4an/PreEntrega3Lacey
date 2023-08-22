@@ -1,18 +1,32 @@
 
 main {
-    
+    * {
+        margin: 0;    
+        padding: 0;
+        box-sizing: inherit;
+    }
+    padding: 0;
     padding-top: 185px;
     .banner {
         justify-content: center;
         padding: 0;
         margin-bottom: 15px;
         opacity: 80%;
+        .imagenBanner{
+            padding: 0;
+            margin: 0;
+            position: relative;
+            display: flex;
+            width: 100%;   
+        }
     }
     .titulo2 {
         padding-left: 40px;
     }
 
     .ofertas {
+        display: block;
+        align-self: center;
         margin-top: 30px;
         
         .off {
@@ -44,12 +58,17 @@ main {
             padding: 0;
             display: flex;
         }
+        
     }
     .otrasOfertas {
         padding-top: 50px;
-        .col {
+        justify-content: center;
+        padding: 0;
+        .colum {
             .row{
                 position: relative;
+                margin: 0px;
+                justify-content: center;
                 img {
                     width: 660px;
                     height: 463px;
@@ -84,23 +103,69 @@ main {
                         font-size: 20px;
                         background-color: whitesmoke;
                         color: rgb(42, 41, 41);
-                        }
+                    }
                 }
             }
                 
+        }        
+    }
+    @media (max-width: 576px){
+        .otrasOfertas {
+            padding-top: 50px;
+            justify-content: center;
+            padding: 0;
+            .colum {
+                .row{
+                    position: relative;
+                    margin: 0px;
+                    justify-content: center;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                        padding: 5px;
+                        }
+                    h3 {
+                        position: absolute;
+                        top: 39%;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                    }
+                    h2 {
+                        position: absolute;
+                        top: 45%;
+                        color: white;
+                        font-weight: 800;
+                        font-size: 28px;
+                        letter-spacing: 3px;
+                        }
+                    a{
+                        position: absolute;
+                        bottom: 30px;
+                        button{
+                            border-radius: 5%;
+                            width: 150px;
+                            height: 40px;
+                            border: none;
+                            font-weight: 700;
+                            font-size: 20px;
+                            background-color: whitesmoke;
+                            color: rgb(42, 41, 41);
+                        }
+                    }
+                }
+                    
+            }        
         }
-            
-            
-                
-            
+    }
+    .filtroAcordion {
+        padding: 0px 0px 0px 20px;
+        margin: 0;
     }
     
-    .imagenBanner {
-        position: relative;
-        display: flex;
-        width: 100%;
-                  
-    }
+   
     .contactar {
         margin-top: 100px;
         padding:0px 100px 30px 100px;
@@ -140,8 +205,54 @@ main {
         }
         
         
-    }    
-
+    }
+    @media (max-width: 768px ){
+        .contactar {
+            margin-top: 100px;
+            padding:10px;
+    
+            .titulo {
+                display: flex;
+                align-items: center;
+                border-bottom:1px solid rgba(55, 55, 55, 0.3);
+                margin-bottom: 30px;
+            }
+            .info {
+                div {
+                    margin-top: 15px;
+                    h2 {
+                        font-size: 15px;
+                    }
+                    p {
+                        font-size: 15px;
+                        opacity: 50%;
+                    }
+                }
+            }
+            .formulario {
+                .row {
+                    margin: 10px 0px 10px 0px;
+                    input {
+                        margin: 1px;
+                    }
+                    .btn {
+                        background-color: grey;
+                        color: white;
+                        border-radius: 0;
+                        float: right;
+                        width: 200px;
+                        height: 40px;
+                        padding: 4px 50px 4px 50px;
+                        font-size: medium;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+            
+            
+        }
+    } 
 }
 
 

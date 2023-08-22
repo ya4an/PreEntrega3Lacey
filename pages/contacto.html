@@ -11,16 +11,16 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body class="bg-light row">
+<body>
   <!--HEADER-->
   <header class="fixed-top w-100 p-0 z-3">
-    <div class="container-fluid text-center ">
+    <div class="container-fluid">
       <div class="row titulo">
         <h1 class="col">TRUESKATESHOP-CONTACTO</h1>
       </div>
       <div class="row preNav">
         
-        <div class="col search">
+        <div class="col-2 col-sm-3 col-xl- col-xxl- search">
           
             <label for="search-toggle">
               <a href="#"><img class="img-fluid lupaBuscador" src="../assest/ico/search.svg" alt="lupaBuscador"></a>
@@ -31,12 +31,12 @@
             
           
         </div>
-        <div class="col ">
+        <div class="col-8 col-sm-6 col-xl- col-xxl- logo">
           <a class="navbar-brand" href="../index.html">
             <img class="img-fluid logoPagina" src="../assest/logos/logoPagina.png" alt="logo_pagina">
           </a>
         </div>
-        <div class="col">
+        <div class="col-2 col-sm-3 col-xl- col-xxl- carrito">
           <a href=""> <!--LINKEAR-->
             <img class="img-fluid carritoCompra" src="../assest/ico/bag.svg" alt="carritoCompra">
             </a>
@@ -46,13 +46,13 @@
       </div>
     </div>
     <nav class="container-fluid navbar navbar-expand-lg z-2 justify-content-center">
-      <div class="row align-items-center justify-content-between">
+      <div class="row align-items-left justify-content-between">
         
         <button
           class="ms-auto col-1 col-sm-1 col-md-1 col-lg-7 col-xl-7 col-xxl-2 border-3 rounded-5 shadow border-warning w-100 navbar-toggler"
           type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon "></span>
         </button>
         <div class="menu col-12 col-sm-6 col-md-2 col-lg-7 col-xl-7 col-xxl-2 justify-content-center collapse navbar-collapse fs-6 fw-bold"
           id="navbarSupportedContent">
@@ -60,7 +60,7 @@
           <ul class="row navbar-nav ">
             <li class="col px-3 nav-item"><a class="nav-link"
                 href="../index.html">INICIO</a></li>
-            <li class="col px-3 nav-item"><a class="nav-link" href="../pages/hombre.html">HOMBRE</a>
+            <li class="col  px-3 nav-item"><a class="nav-link" href="./hombre.html">HOMBRE</a>
               <ul class="sub-menu">
                 <li><a href="#">Zapatillas</a></li>
                 <li><a href="#">Remeras</a></li>
@@ -81,7 +81,7 @@
             </li>
               
             
-            <li class="col px-3 nav-item"><a class="nav-link" href="../pages/skate.html">SKATE</a>
+            <li class="col px-3 nav-item"><a class="nav-link" href="./skate.html">SKATE</a>
               <ul class="sub-menu">
                 <li><a href="#">Tablas</a></li>
                 <li><a href="#">Trucks</a></li>
@@ -109,7 +109,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-4 info">
+        <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-6 info">
           <div class="row"><h2>ENCANTADOS DE CONOCERTE</h2>
             <p>Somos una tienda creada por riders para riders. Disponemos de las mejores marcas 
               y productos del mundo del Skate. No dudes en visitar nuestra tienda en ###.
@@ -128,38 +128,38 @@
           </div>
 
         </div>
-        <div class="col-8 formulario">
+        <div class="col-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 formulario">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-3 w-50">
               <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-3 w-50">
               <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-6 w-100">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-6 w-100">
               <input type="contacto" class="form-control" id="exampleFormControlInput1" placeholder="Contacto">
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-6 w-100">
               <input type="asunto" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
             </div>
           </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-6 col-lg-7 col-xl-7 col-xxl-2 w-100">
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
             </div>
           </div>
           
           <div class="row button">
-            <div class="col-12">
+            <div class="col">
               <button type="button" class="btn"
                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                 Enviar
@@ -175,29 +175,27 @@
   </main>
   <!--TODAVIA NO TENGO BIEN DEFINIDO COMO HACER EL FOOTER, PODRIA LLEGAR A TENER UN APARTADO DE ATAJOS PARA OTRAS PARTES DE LA PAGINA-->
   <footer class="container-fluid">
-    <div class="row">
-      <img src="../assest/img/fondoFooter.webp" class="opacity-50" alt="fondoFooter">
+    <div class="row fondoFooter">
+      <img src="../assest/img/fondoFooter.webp" alt="fondoFooter">
     </div>
-    <div class="container-fluid text-center">
+    <div class="container-fluid pie">
       <div class="row">
-        <div class="col-12">
-          <div class="row d-flex justify-content-center m-5">
-            <a href="../index.html"><img class="img-fluid m-4 mt-2 opacity-75" width="130"
-                src="../assest/logos/logoFooter.png" alt="logoFooter"></a>
-            <a class="col" href=""><img class="img-fluid redesSociales" src="../assest/ico/youtube.svg"
+        <div class="col-12 col-lg- col-xl- col-xxl- logos">
+          <div class="row redesSociales">
+            <a href="./index.html"><img class="img-fluid logoFooter" src="../assest/logos/logoFooter.png" alt="logoFooter"></a>
+            <a class="col-3 col-lg- col-xl- col-xxl-" href="#"><img class="img-fluid youtube" src="../assest/ico/youtube.svg"
                 alt="youtube"></a>
-            <a class="col" href=""><img class="img-fluid m-4 redesSociales" src="../assest/ico/instagram.svg"
+            <a class="col-3 col-lg- col-xl- col-xxl- " href="#"><img class="img-fluid" src="../assest/ico/instagram.svg"
                 alt="instagram"></a>
-            <a class="col" href=""><img class="img-fluid m-4 redesSociales" src="../assest/ico/facebook.svg"
+            <a class="col-3 col-lg- col-xl- col-xxl- " href="#"><img class="img-fluid" src="../assest/ico/facebook.svg"
                 alt="facebook"></a>
-            <a class="col" href=""><img class="img-fluid redesSociales" src="../assest/ico/whatsapp.svg"
+            <a class="col-3 col-lg- col-xl- col-xxl- " href="#"><img class="img-fluid whatsapp" src="../assest/ico/whatsapp.svg"
                 alt="whatsapp"></a>
           </div>
-          <div class="row">
-            <h5 class="fs-6 mt-3 text-dark border-top border-2">TRUE® SKATESHOP - MARCA REGISTRADA - ARGENTINA</h5>
+          <div class="row finalPie">
+            <h5>TRUE® SKATESHOP - MARCA REGISTRADA - ARGENTINA</h5>
           </div>
         </div>
-
       </div>
     </div>
 

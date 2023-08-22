@@ -86,59 +86,65 @@ $negroSuave: rgba(3, 3, 3, 1); */
     transform: translateY(-7px); /* Mover hacia arriba */
   }
 }
-.cardsChicas {
+.contenedorCards {
   padding: 0;
-  margin: 0;
 }
-.cardsChicas .card {
+.contenedorCards .cardsChicas {
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.contenedorCards .cardsChicas .card {
   border: none;
   border-radius: 0;
   text-align: center;
+  justify-content: center;
   align-items: start;
   padding: 1px;
   animation: zoomIn 0.4s ease-in-out;
   transition: transform 1s ease; /* Transición suave al cambiar transformaciones */
 }
-.cardsChicas .card:hover {
+.contenedorCards .cardsChicas .card:hover {
   animation: scale 0.6s ease; /* Aplicar la animación al hacer hover */
   transform: translateY(-7px); /* Realizar un pequeño movimiento hacia arriba */
 }
-.cardsChicas .card .bordeImg {
-  border-radius: 0;
+.contenedorCards .cardsChicas .card .bordeImg {
   width: 100%;
   height: auto;
   margin-bottom: 3px;
 }
-.cardsChicas .card .bordeImg .card-img-top {
+.contenedorCards .cardsChicas .card .bordeImg .card-img-top {
   display: flex;
   position: relative;
   padding: 5px;
 }
-.cardsChicas .card .card-text {
+.contenedorCards .cardsChicas .card .card-text {
   margin: 15px 0px 5px 10px;
   font-size: medium;
 }
-.cardsChicas .card h4 {
+.contenedorCards .cardsChicas .card h4 {
   margin: 0px 0px 25px 10px;
   font-size: small;
   font-weight: 400;
 }
-.cardsChicas .card .card-body {
+.contenedorCards .cardsChicas .card .card-body {
   padding: 0px;
   display: inline;
   justify-content: flex-start;
 }
-.cardsChicas .card .card-body p {
+.contenedorCards .cardsChicas .card .card-body p {
   display: inline;
   font-size: smaller;
   font-weight: bolder;
   align-items: center;
   padding: 0px 10px 0px 10px;
 }
-.cardsChicas .card .card-body a {
+.contenedorCards .cardsChicas .card .card-body a {
   padding: 0px;
 }
-.cardsChicas .card .card-body a img {
+.contenedorCards .cardsChicas .card .card-body a img {
   padding: 0px 0px 10px 0px;
   display: inline;
   align-items: center;
@@ -151,6 +157,7 @@ $negroSuave: rgba(3, 3, 3, 1); */
 }
 .owl-carousel .item {
   margin: 0px;
+  justify-content: center;
 }
 .owl-carousel .item .card {
   width: 510px;
@@ -170,16 +177,14 @@ $negroSuave: rgba(3, 3, 3, 1); */
   padding: 5px;
 }
 .owl-carousel .item .card .card-text {
-  margin: 0px 0px 27px 0px;
+  margin: 0px 0px 30px 0px;
   position: absolute;
   bottom: 120px;
 }
 .owl-carousel .item .card h3 {
   width: 75%;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 .owl-carousel .item .card h4 {
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 5px 0px 5px 0px;
   position: absolute;
   width: 75%;
@@ -188,7 +193,6 @@ $negroSuave: rgba(3, 3, 3, 1); */
   font-style: initial;
 }
 .owl-carousel .item .card .card-body {
-  background-color: white;
   padding: 0px;
   display: inline;
   justify-content: flex-start;
@@ -211,6 +215,207 @@ $negroSuave: rgba(3, 3, 3, 1); */
   width: 27px;
 }
 
+@media (max-width: 576px) {
+  .owl-carousel {
+    margin: 0;
+    padding: 0;
+  }
+  .owl-carousel .item {
+    margin: 0px;
+    justify-content: center;
+  }
+  .owl-carousel .item .card {
+    width: 310px;
+    height: 400px;
+    border-radius: 0;
+    margin: 10px;
+  }
+  .owl-carousel .item .card .bordeImg {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+  }
+  .owl-carousel .item .card .bordeImg .card-img-top {
+    display: flex;
+    position: relative;
+    padding: 5px;
+  }
+  .owl-carousel .item .card .card-text {
+    margin: 0px 0px 30px 0px;
+    position: absolute;
+    bottom: 120px;
+  }
+  .owl-carousel .item .card .card-text h3 {
+    width: 75%;
+    font-size: 10px;
+  }
+  .owl-carousel .item .card h4 {
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    width: 75%;
+    bottom: 100px;
+    font-weight: 350;
+    font-size: 5px;
+    font-style: initial;
+  }
+  .owl-carousel .item .card .card-body {
+    padding: 0px;
+    display: inline;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 60px;
+  }
+  .owl-carousel .item .card .card-body p {
+    display: inline;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+  }
+  .owl-carousel .item .card .card-body a {
+    padding: 0px;
+  }
+  .owl-carousel .item .card .card-body a img {
+    padding: 0px 0px 10px 0px;
+    display: inline;
+    align-items: center;
+    width: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .owl-carousel {
+    margin: 0;
+    padding: 0;
+  }
+  .owl-carousel .item {
+    margin: 0px;
+    justify-content: center;
+  }
+  .owl-carousel .item .card {
+    width: 310px;
+    height: 400px;
+    border-radius: 0;
+    margin: 10px;
+  }
+  .owl-carousel .item .card .bordeImg {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+  }
+  .owl-carousel .item .card .bordeImg .card-img-top {
+    display: flex;
+    position: relative;
+    padding: 5px;
+  }
+  .owl-carousel .item .card .card-text {
+    margin: 0px 0px 30px 0px;
+    position: absolute;
+    bottom: 120px;
+  }
+  .owl-carousel .item .card h3 {
+    width: 75%;
+    font-size: 20px;
+  }
+  .owl-carousel .item .card h4 {
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    width: 75%;
+    bottom: 100px;
+    font-weight: 350;
+    font-size: small;
+    font-style: initial;
+  }
+  .owl-carousel .item .card .card-body {
+    padding: 0px;
+    display: inline;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 60px;
+  }
+  .owl-carousel .item .card .card-body p {
+    display: inline;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+  }
+  .owl-carousel .item .card .card-body a {
+    padding: 0px;
+  }
+  .owl-carousel .item .card .card-body a img {
+    padding: 0px 0px 10px 0px;
+    display: inline;
+    align-items: center;
+    width: 27px;
+  }
+}
+@media (max-width: 1200px) {
+  .owl-carousel {
+    margin: 0;
+    padding: 0;
+  }
+  .owl-carousel .item {
+    margin: 0px;
+    justify-content: center;
+  }
+  .owl-carousel .item .card {
+    width: 310px;
+    height: 450px;
+    border-radius: 0;
+    margin: 10px;
+  }
+  .owl-carousel .item .card .bordeImg {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3px;
+  }
+  .owl-carousel .item .card .bordeImg .card-img-top {
+    display: flex;
+    position: relative;
+    padding: 5px;
+  }
+  .owl-carousel .item .card .card-text {
+    margin: 0px 0px 30px 0px;
+    position: absolute;
+    bottom: 100px;
+  }
+  .owl-carousel .item .card h3 {
+    width: 75%;
+    font-size: 25px;
+  }
+  .owl-carousel .item .card h4 {
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    width: 75%;
+    bottom: 70px;
+    font-weight: 350;
+    font-size: large;
+    font-style: initial;
+  }
+  .owl-carousel .item .card .card-body {
+    padding: 0px;
+    display: inline;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 30px;
+  }
+  .owl-carousel .item .card .card-body p {
+    display: inline;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px 0px 20px 0px;
+  }
+  .owl-carousel .item .card .card-body a {
+    padding: 0px;
+  }
+  .owl-carousel .item .card .card-body a img {
+    padding: 0px 0px 10px 0px;
+    display: inline;
+    align-items: center;
+    width: 27px;
+  }
+}
 header {
   padding: 0px;
   background-color: whitesmoke;
@@ -245,9 +450,17 @@ header .preNav .search {
 header .preNav img {
   width: 30px;
 }
-header .preNav .logoPagina {
+header .preNav .logo {
+  display: flex;
+  justify-content: center;
+}
+header .preNav .logo .logoPagina {
   opacity: 80%;
   width: 250px;
+}
+header .preNav .carrito {
+  display: flex;
+  justify-content: center;
 }
 header .preNav .search {
   position: relative;
@@ -314,14 +527,66 @@ header nav .navbar-nav .nav-item:hover .sub-menu {
 }
 
 footer {
-  padding-top: 100px;
+  padding: 0;
+  margin: 0;
+  padding: 30px 0px 0px 0px;
 }
-footer a .redesSociales {
-  width: 50px;
+footer .fondoFooter {
+  opacity: 50%;
+  padding-bottom: 60px;
+}
+footer .fondoFooter img {
+  padding: 0;
+}
+footer .pie .logos {
+  display: block;
+  justify-content: center;
+  padding: 0;
+}
+footer .pie .logos .redesSociales {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+footer .pie .logos .redesSociales a {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+footer .pie .logos .redesSociales a .logoFooter {
+  margin: 0;
+  padding: 0;
+  opacity: 75%;
+  width: 150px;
+}
+footer .pie .logos .redesSociales a img {
+  opacity: 85%;
+  width: 40px;
+}
+footer .pie .logos .redesSociales a .youtube, footer .pie .logos .redesSociales a .whatsapp {
+  margin-bottom: 50px;
+}
+footer .pie .logos .finalPie {
+  padding: 0;
+  margin: 0;
+}
+footer .pie .logos .finalPie h5 {
+  font-size: large;
+  color: grey;
+  text-align: center;
+  margin-top: 20px;
+  border-top: grey solid 2px;
 }
 
 main {
+  padding: 0;
   padding-top: 185px;
+}
+main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 main .banner {
   justify-content: center;
@@ -329,10 +594,19 @@ main .banner {
   margin-bottom: 15px;
   opacity: 80%;
 }
+main .banner .imagenBanner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
 main .titulo2 {
   padding-left: 40px;
 }
 main .ofertas {
+  display: block;
+  align-self: center;
   margin-top: 30px;
 }
 main .ofertas .off {
@@ -366,17 +640,21 @@ main .ofertas .subtitulo {
 }
 main .otrasOfertas {
   padding-top: 50px;
+  justify-content: center;
+  padding: 0;
 }
-main .otrasOfertas .col .row {
+main .otrasOfertas .colum .row {
   position: relative;
+  margin: 0px;
+  justify-content: center;
 }
-main .otrasOfertas .col .row img {
+main .otrasOfertas .colum .row img {
   width: 660px;
   height: 463px;
   position: relative;
   padding: 5px;
 }
-main .otrasOfertas .col .row h3 {
+main .otrasOfertas .colum .row h3 {
   position: absolute;
   top: 39%;
   color: white;
@@ -384,7 +662,7 @@ main .otrasOfertas .col .row h3 {
   font-size: 28px;
   letter-spacing: 1px;
 }
-main .otrasOfertas .col .row h2 {
+main .otrasOfertas .colum .row h2 {
   position: absolute;
   top: 45%;
   color: white;
@@ -392,11 +670,11 @@ main .otrasOfertas .col .row h2 {
   font-size: 38px;
   letter-spacing: 3px;
 }
-main .otrasOfertas .col .row a {
+main .otrasOfertas .colum .row a {
   position: absolute;
   bottom: 30px;
 }
-main .otrasOfertas .col .row a button {
+main .otrasOfertas .colum .row a button {
   border-radius: 5%;
   width: 150px;
   height: 40px;
@@ -406,10 +684,57 @@ main .otrasOfertas .col .row a button {
   background-color: whitesmoke;
   color: rgb(42, 41, 41);
 }
-main .imagenBanner {
-  position: relative;
-  display: flex;
-  width: 100%;
+@media (max-width: 576px) {
+  main .otrasOfertas {
+    padding-top: 50px;
+    justify-content: center;
+    padding: 0;
+  }
+  main .otrasOfertas .colum .row {
+    position: relative;
+    margin: 0px;
+    justify-content: center;
+  }
+  main .otrasOfertas .colum .row img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 5px;
+  }
+  main .otrasOfertas .colum .row h3 {
+    position: absolute;
+    top: 39%;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  main .otrasOfertas .colum .row h2 {
+    position: absolute;
+    top: 45%;
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+  main .otrasOfertas .colum .row a {
+    position: absolute;
+    bottom: 30px;
+  }
+  main .otrasOfertas .colum .row a button {
+    border-radius: 5%;
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: rgb(42, 41, 41);
+  }
+}
+main .filtroAcordion {
+  padding: 0px 0px 0px 20px;
+  margin: 0;
 }
 main .contactar {
   margin-top: 100px;
@@ -443,9 +768,44 @@ main .contactar .formulario .row .btn {
   font-size: medium;
   font-weight: bold;
 }
-
-.text-center {
-  text-align: center;
+@media (max-width: 768px) {
+  main .contactar {
+    margin-top: 100px;
+    padding: 10px;
+  }
+  main .contactar .titulo {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(55, 55, 55, 0.3);
+    margin-bottom: 30px;
+  }
+  main .contactar .info div {
+    margin-top: 15px;
+  }
+  main .contactar .info div h2 {
+    font-size: 15px;
+  }
+  main .contactar .info div p {
+    font-size: 15px;
+    opacity: 50%;
+  }
+  main .contactar .formulario .row {
+    margin: 10px 0px 10px 0px;
+  }
+  main .contactar .formulario .row input {
+    margin: 1px;
+  }
+  main .contactar .formulario .row .btn {
+    background-color: grey;
+    color: white;
+    border-radius: 0;
+    float: right;
+    width: 200px;
+    height: 40px;
+    padding: 4px 50px 4px 50px;
+    font-size: medium;
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
