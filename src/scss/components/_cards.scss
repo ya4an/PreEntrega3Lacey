@@ -1,6 +1,7 @@
 //CARD
 .cardsChicas {
-    padding-top: 30px;
+    padding: 0;
+    margin: 0;
     .card {
         border: none;
         border-radius: 0;
@@ -84,15 +85,19 @@
                 
             } 
             .card-text {
-                background-color: white;
-                margin: 0px 0px 25px 0px;
+                margin: 0px 0px 27px 0px;
                 position: absolute;
                 bottom: 120px;
             }
+            h3{
+                width: 75%;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
             h4 {
-                background-color: white;
+                background-color: rgba(255, 255, 255, 0.5);
                 padding: 5px 0px 5px 0px;
                 position: absolute;
+                width: 75%;
                 bottom: 100px;
                 font-weight: 350;
                 font-style: initial;

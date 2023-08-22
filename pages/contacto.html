@@ -15,28 +15,33 @@
   <!--HEADER-->
   <header class="fixed-top w-100 p-0 z-3">
     <div class="container-fluid text-center ">
-      <div class="row d-flex">
-        <h1 class="col titulo fs-6 d-flex justify-content-center">TRUESKATESHOP-INICIO</h1>
+      <div class="row titulo">
+        <h1 class="col">TRUESKATESHOP-CONTACTO</h1>
       </div>
       <div class="row preNav">
-        <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 ">
+        
+        <div class="col search">
+          
+            <label for="search-toggle">
+              <a href="#"><img class="img-fluid lupaBuscador" src="../assest/ico/search.svg" alt="lupaBuscador"></a>
+            </label>
+            <div class="search-box">
+              <input type="text" placeholder="Buscar...">
+            </div>
+            
+          
+        </div>
+        <div class="col ">
           <a class="navbar-brand" href="../index.html">
             <img class="img-fluid logoPagina" src="../assest/logos/logoPagina.png" alt="logo_pagina">
           </a>
         </div>
-        <div class="col-4 col-sm-5 col-md-4 col-lg-2 col-xl-2 col-xxl-2 contLupaCarri">
-          <div class="row">
-            <div class="col">
-              <a href=""> <!--LINKEAR-->
-                <img class="img-fluid lupaBuscador" src="../assest/ico/search.svg" alt="lupaBuscador">
-              </a>
-            </div>
-            <div class="col">
-              <a href=""> <!--LINKEAR-->
-                <img class="img-fluid carritoCompra" src="../assest/ico/bag.svg" alt="carritoCompra">
-              </a>
-            </div>
-          </div>
+        <div class="col">
+          <a href=""> <!--LINKEAR-->
+            <img class="img-fluid carritoCompra" src="../assest/ico/bag.svg" alt="carritoCompra">
+            </a>
+        </div>
+          
         </div>
       </div>
     </div>
@@ -96,65 +101,68 @@
     
   </header>
   <!--MAIN-->
-  <main class="mt-6 border-bottom shadow-sm ">
-    <div class="container-fluid mt-4">
-      <div class="row d-flex text-center align-items-center">
-        <div class="col-12">
-          <h1 class="d-flex border-bottom">CONTACTANOS</h1>
+  <main>
+    <div class="container-fluid contactar">
+      <div class="row">
+        <div class="col-12 titulo">
+          <h1>CONTACTANOS</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-4">
-          <div class="row"><h2 class="fs-5">ENCANTADOS DE CONOCERTE</h2>
-            <p class="opacity-50">Somos una tienda creada por riders para riders. Disponemos de las mejores marcas 
+        <div class="col-4 info">
+          <div class="row"><h2>ENCANTADOS DE CONOCERTE</h2>
+            <p>Somos una tienda creada por riders para riders. Disponemos de las mejores marcas 
               y productos del mundo del Skate. No dudes en visitar nuestra tienda en ###.
             </p>
           </div>
-          <div class="row mt-5"><h2 class="fs-5">DIRECCION</h2>
-            <p class="opacity-50">
+          <div class="row"><h2>DIRECCION</h2>
+            <p>
               Buenos Aires, Argentina.
             </p>
           </div>
-          <div class="row mt-5"><h2 class="fs-5">INFORMACION DE CONTACTO</h2>
-            <p class="opacity-50">
+          <div class="row"><h2>INFORMACION DE CONTACTO</h2>
+            <p>
               Mail: name@example.com.
               Telefono: (0000) - 0000000.
             </p>
           </div>
 
         </div>
-        <div class="col-8">
-          <div class="row justify-content-center">
-            <div class="col-12 mb-3 w-75">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido">
+        <div class="col-8 formulario">
+          <div class="row">
+            <div class="col-6">
+              <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            </div>
+            <div class="col-6">
+              <input type="apellido" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-12 mb-3 w-75">
+          <div class="row">
+            <div class="col-12">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-12 mb-3 w-75">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contacto">
+          <div class="row">
+            <div class="col-12">
+              <input type="contacto" class="form-control" id="exampleFormControlInput1" placeholder="Contacto">
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-12 mb-3 w-75">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+          <div class="row">
+            <div class="col-12">
+              <input type="asunto" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-12 mb-3 w-75">
+          <div class="row">
+            <div class="col-12">
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
             </div>
           </div>
           
-          <div class="row justify-content-center">
-            <div class="col-12 w-75">
-              <button type="button" class="btn btn-primary"
+          <div class="row button">
+            <div class="col-12">
+              <button type="button" class="btn"
                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                Enviar Consulta
+                Enviar
               </button>
             </div>
           </div>
@@ -168,7 +176,7 @@
   <!--TODAVIA NO TENGO BIEN DEFINIDO COMO HACER EL FOOTER, PODRIA LLEGAR A TENER UN APARTADO DE ATAJOS PARA OTRAS PARTES DE LA PAGINA-->
   <footer class="container-fluid">
     <div class="row">
-      <img src="../assest/img/fondoFooter.jpeg" class="opacity-50" alt="fondoFooter">
+      <img src="../assest/img/fondoFooter.webp" class="opacity-50" alt="fondoFooter">
     </div>
     <div class="container-fluid text-center">
       <div class="row">

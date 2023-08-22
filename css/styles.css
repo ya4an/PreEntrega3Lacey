@@ -1,4 +1,67 @@
 @charset "UTF-8";
+.filtroAcordion {
+  /* Estilos generales */
+  /* Estilos del acordeón */
+  /* Flecha en la derecha del botón */
+  /* Estilos del contenido */
+}
+.filtroAcordion .filter-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.filtroAcordion .filter-section {
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.filtroAcordion .filter-title {
+  border: none;
+  border-bottom: 1px solid rgb(55, 55, 55);
+  display: flex;
+  width: 100%;
+  text-align: left;
+  color: rgb(55, 55, 55);
+  font-weight: 700;
+  padding: 10px;
+  position: relative;
+  background-color: white;
+}
+.filtroAcordion .filter-title img {
+  opacity: 75%;
+}
+.filtroAcordion .filter-title img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filtroAcordion .filter-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.filtroAcordion .filter-content a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+.filtroAcordion .filter-content a img {
+  width: 30px;
+  display: flex;
+}
+.filtroAcordion .filter-content-color {
+  display: block;
+  flex-direction: column;
+  padding: 10px;
+}
+.filtroAcordion .filter-content-color a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+.filtroAcordion .filter-content-color a img {
+  width: 30px;
+  display: flex;
+}
+
 /* $dorado: rgba(191, 143, 55, 1);
 $doradoVerdoso: rgba(211, 169, 7, 1);
 $doradoNaranja: rgba(229, 155, 0, 1);
@@ -24,7 +87,8 @@ $negroSuave: rgba(3, 3, 3, 1); */
   }
 }
 .cardsChicas {
-  padding-top: 30px;
+  padding: 0;
+  margin: 0;
 }
 .cardsChicas .card {
   border: none;
@@ -106,15 +170,19 @@ $negroSuave: rgba(3, 3, 3, 1); */
   padding: 5px;
 }
 .owl-carousel .item .card .card-text {
-  background-color: white;
-  margin: 0px 0px 25px 0px;
+  margin: 0px 0px 27px 0px;
   position: absolute;
   bottom: 120px;
 }
+.owl-carousel .item .card h3 {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .owl-carousel .item .card h4 {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 5px 0px 5px 0px;
   position: absolute;
+  width: 75%;
   bottom: 100px;
   font-weight: 350;
   font-style: initial;
@@ -144,7 +212,8 @@ $negroSuave: rgba(3, 3, 3, 1); */
 }
 
 header {
-  background-color: white;
+  padding: 0px;
+  background-color: whitesmoke;
   width: 100%;
 }
 header * {
@@ -152,32 +221,74 @@ header * {
   margin: 0;
   box-sizing: inherit;
 }
+header .titulo {
+  background-color: white;
+  display: flex;
+  padding: 5px 0px 5px 0px;
+}
+header .titulo h1 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7490196078);
+  display: flex;
+  justify-content: center;
+}
 header .preNav {
   padding: 10px 0px 10px 0px;
   display: flex;
   justify-content: center;
-}
-header .preNav .contLupaCarri {
-  display: flex;
   align-items: center;
-  justify-content: end;
 }
-header .preNav .contLupaCarri img {
+header .preNav .search {
+  display: flex;
+  justify-content: center;
+}
+header .preNav img {
   width: 30px;
 }
 header .preNav .logoPagina {
-  display: flex;
-  justify-content: center;
-  width: 600px;
+  opacity: 80%;
+  width: 250px;
+}
+header .preNav .search {
+  position: relative;
+}
+header .preNav .search-box {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(10px, -50%);
+  width: 400px;
+  background-color: whitesmoke;
+  border-bottom: #ccc solid 2px;
+  padding: 0px 0px 10px 0px;
+  z-index: 10;
+}
+header .preNav .search-box input {
+  width: 100%;
+  background-color: whitesmoke;
+  border: 0;
+}
+header .preNav .search-box input:focus {
+  outline: none;
+}
+header .preNav .search:focus-within .search-box {
+  display: block;
 }
 header nav {
-  margin-top: 25px;
+  background-color: white;
+  margin-top: 1px;
+  font-size: larger;
+  font-weight: 100;
 }
 header nav .navbar-nav {
   position: relative;
 }
 header nav .navbar-nav .nav-item {
   position: relative;
+}
+header nav .navbar-nav .nav-item .active {
+  color: rgba(243, 156, 18, 0.7);
 }
 header nav .navbar-nav .nav-item .sub-menu {
   display: none;
@@ -196,14 +307,10 @@ header nav .navbar-nav .nav-item .sub-menu a {
   color: darkgrey;
 }
 header nav .navbar-nav .nav-item .sub-menu a:hover {
-  color: #f39c12;
+  color: rgb(243, 156, 18);
 }
 header nav .navbar-nav .nav-item:hover .sub-menu {
   display: block;
-}
-header .titulo {
-  background-color: rgba(199, 198, 198, 0.3);
-  padding: 5px 0px 5px 0px;
 }
 
 footer {
@@ -214,7 +321,16 @@ footer a .redesSociales {
 }
 
 main {
-  padding-top: 220px;
+  padding-top: 185px;
+}
+main .banner {
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 15px;
+  opacity: 80%;
+}
+main .titulo2 {
+  padding-left: 40px;
 }
 main .ofertas {
   margin-top: 30px;
@@ -241,6 +357,15 @@ main .ofertas .off .carruselOferta {
 }
 main .ofertas .offCarrusel {
   padding: 0px 0px 0px 1px;
+  margin-bottom: 40px;
+}
+main .ofertas .subtitulo {
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+}
+main .otrasOfertas {
+  padding-top: 50px;
 }
 main .otrasOfertas .col .row {
   position: relative;
@@ -285,6 +410,38 @@ main .imagenBanner {
   position: relative;
   display: flex;
   width: 100%;
+}
+main .contactar {
+  margin-top: 100px;
+  padding: 0px 100px 30px 100px;
+}
+main .contactar .titulo {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(55, 55, 55, 0.3);
+  margin-bottom: 30px;
+}
+main .contactar .info div {
+  margin-top: 15px;
+}
+main .contactar .info div h2 {
+  font-size: 25px;
+}
+main .contactar .info div p {
+  opacity: 50%;
+}
+main .contactar .formulario .row {
+  margin: 10px 0px 10px 0px;
+}
+main .contactar .formulario .row .btn {
+  background-color: grey;
+  border-radius: 0;
+  float: right;
+  width: 200px;
+  height: 40px;
+  padding: 4px 50px 4px 50px;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .text-center {

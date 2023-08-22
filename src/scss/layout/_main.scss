@@ -1,9 +1,20 @@
 
 main {
-   
-    padding-top: 220px;
+    
+    padding-top: 185px;
+    .banner {
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 15px;
+        opacity: 80%;
+    }
+    .titulo2 {
+        padding-left: 40px;
+    }
+
     .ofertas {
         margin-top: 30px;
+        
         .off {
             position: relative;
             padding: 0;
@@ -26,10 +37,16 @@ main {
         }
         .offCarrusel {
             padding: 0px 0px 0px 1px;
-
+            margin-bottom: 40px;
+        }
+        .subtitulo {
+            margin-top: 30px;
+            padding: 0;
+            display: flex;
         }
     }
     .otrasOfertas {
+        padding-top: 50px;
         .col {
             .row{
                 position: relative;
@@ -82,7 +99,47 @@ main {
         position: relative;
         display: flex;
         width: 100%;
-               
+                  
+    }
+    .contactar {
+        margin-top: 100px;
+        padding:0px 100px 30px 100px;
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            border-bottom:1px solid rgba(55, 55, 55, 0.3);
+            margin-bottom: 30px;
+        }
+        .info {
+            div {
+                margin-top: 15px;
+                h2 {
+                    font-size: 25px;
+                }
+                p {
+                    opacity: 50%;
+                }
+            }
+        }
+        .formulario {
+            .row {
+                margin: 10px 0px 10px 0px;
+                .btn {
+                    background-color: grey;
+                    border-radius: 0;
+                    float: right;
+                    width: 200px;
+                    height: 40px;
+                    padding: 4px 50px 4px 50px;
+                    font-size: medium;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+        
+        
     }    
 
 }
